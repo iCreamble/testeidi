@@ -12,8 +12,8 @@ from datetime import datetime
 
 
 dynamo_client  =  boto3.resource(service_name = 'dynamodb',region_name = 'sa-east-1',
-              aws_access_key_id = DBUSER,
-              aws_secret_access_key = DBPASS)
+              aws_access_key_id = st.secrets["DBUSER"],
+              aws_secret_access_key = st.secrets["DBPASS"])
 mytable = dynamo_client.Table('moeidi')
 
 
