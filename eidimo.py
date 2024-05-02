@@ -69,7 +69,7 @@ with tab3:
         st.write(type(thisrow))
         st.write(thisrow)
 
-        thisrow = pd.DataFrame(thisrow)
+        thisrow = pd.DataFrame(thisrow, index=[0])
         thisrow = thisrow.iloc[3:]
         thisrow = thisrow.to_dict()
 
