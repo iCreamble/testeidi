@@ -66,8 +66,8 @@ with tab3:
         thisrow = base.get_row('Table1', tab3input2)
         thisrow['Aprovado'] = 1
 
-        st.write(type(thisrow))
-        st.write(thisrow)
+        # st.write(type(thisrow))
+        # st.write(thisrow)
 
         thisrow = pd.DataFrame(thisrow, index=[0])
         thisrow = thisrow.iloc[3:]
