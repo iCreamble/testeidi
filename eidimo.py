@@ -59,5 +59,10 @@ with tab3:
     st.divider()
     tab3input1 = st.text_input('Senha', type="password")
     tab3input2 = st.text_input('ID necessidade')
-    tab3input1 == st.secrets["PASSAPROV"]
+    if tab3input1 == st.secrets["PASSAPROV"]:
+        st.success('Senha correta.')
+    else:
+        st.warning('Senha incorreta.')
+    if st.button('Aprovar solicitação'):
+        1==1
 
