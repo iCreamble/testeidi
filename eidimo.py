@@ -66,20 +66,10 @@ with tab3:
         thisrow = base.get_row('Table1', tab3input2)
         thisrow['Aprovado'] = 1
 
-        # st.write(type(thisrow))
-        st.write(thisrow)
-        # st.write([thisrow])
-
         thisrow = pd.DataFrame.from_records([thisrow])
-
-        st.write(thisrow)
-
         thisrow = thisrow.iloc[:, 3:]
-
-        # st.write(thisrow)
         thisrow = thisrow.to_dict('records')[0]
 
-        st.write(thisrow)
         
         if st.button('Aprovar solicitação'):
             base.update_row('Table1', tab3input2, thisrow)
