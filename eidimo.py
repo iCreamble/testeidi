@@ -71,6 +71,8 @@ with tab3:
 
         thisrow = pd.DataFrame([thisrow])
         thisrow = thisrow.iloc[3:]
+
+        st.write(thisrow)
         thisrow = thisrow.to_dict()
 
         st.write(thisrow)
