@@ -83,6 +83,8 @@ with tab3:
         
         if st.button('Aprovar solicitação'):
             base.update_row('Table1', tab3input2, thisrow)
+            with st.success('Aprovado com sucesso.'):
+                time.sleep(2)
 
     else:
         st.warning('Senha incorreta.')
