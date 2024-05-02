@@ -22,7 +22,7 @@ base.auth()
 st.title('GERADOR DE MOVE ORDER - EIDI')
 st.divider()
 
-tab1, tab2 = st.tabs(['Gerar move order', 'Verificar solicitações'])
+tab1, tab2, tab3 = st.tabs(['Gerar move order', 'Verificar solicitações', 'Aprovação'])
 
 with tab1:
     with st.form('form1', clear_on_submit=True):
@@ -52,3 +52,10 @@ with tab2:
             df = pd.DataFrame(base.list_rows("Table1"))
             df = df.iloc[:, :]
             st.write(df)
+
+
+with tab3:
+    st.header('Aprovar solicitações')
+    st.divider()
+    tab3input1 = st.text_input('Senha', type="password")
+    tab3input2 = st.text_input
