@@ -63,7 +63,10 @@ with tab3:
     else:
         st.warning('Senha incorreta.')
     tab3input2 = st.text_input('ID necessidade')
+
+    thisrow = base.get_row('Table1', tab3input2)
+    thisrow['feito'] = 1
     
     if st.button('Aprovar solicitação'):
-        1==1
+        base.update_row('Table1', tab3input2, thisrow)
 
