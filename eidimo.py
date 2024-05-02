@@ -5,7 +5,7 @@ from datetime import datetime
 from seatable_api import Base, context
 
 
-
+st.set_page_config(layout="wide")
 
 
 server_url = 'https://cloud.seatable.io'
