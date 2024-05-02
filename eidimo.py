@@ -70,7 +70,7 @@ with tab3:
         st.write(thisrow)
         # st.write([thisrow])
 
-        thisrow = pd.DataFrame.from_records(thisrow)
+        thisrow = pd.DataFrame.from_records([thisrow])
 
         st.write(thisrow)
 
