@@ -9,7 +9,7 @@ from seatable_api import Base, context
 
 
 server_url = 'https://cloud.seatable.io'
-api_token = st.secrets["token"]
+api_token = st.secrets["TOKEN"]
 base = Base(api_token, server_url)
 base.auth()
 
@@ -59,5 +59,5 @@ with tab3:
     st.divider()
     tab3input1 = st.text_input('Senha', type="password")
     tab3input2 = st.text_input('ID necessidade')
-    tab3input1 == st.secrets["passaprov"]
+    tab3input1 == st.secrets["PASSAPROV"]
 
