@@ -65,10 +65,12 @@ with tab3:
 
         thisrow = base.get_row('Table1', tab3input2)
         thisrow['Aprovado'] = 1
+
+        st.write(thisrow)
         
         if st.button('Aprovar solicitação'):
             base.update_row('Table1', tab3input2, thisrow)
-            
+
     else:
         st.warning('Senha incorreta.')
     
