@@ -59,3 +59,5 @@ with tab3:
     st.divider()
     tab3input1 = st.text_input('Senha', type="password")
     tab3input2 = st.text_input('ID necessidade')
+    tab3input1 == st.secrets["passaprov"]
+
