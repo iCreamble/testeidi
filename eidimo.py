@@ -58,4 +58,4 @@ with tab3:
     st.header('Aprovar solicitações')
     st.divider()
     tab3input1 = st.text_input('Senha', type="password")
-    tab3input2 = st.text_input
+    tab3input2 = st.text_input('ID necessidade')
