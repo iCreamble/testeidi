@@ -75,6 +75,7 @@ with tab3:
             base.update_row('Table1', tab3input2, thisrow)
             with st.success('Aprovado com sucesso.'):
                 time.sleep(2)
+                st.empty()
 
     else:
         st.warning('Senha incorreta.')
