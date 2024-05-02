@@ -48,8 +48,7 @@ with tab1:
 
 with tab2:
     if st.button('Verificar solicitações:'):
-        df = pd.DataFrame(base.list_rows("Table1"))
-        df = df.iloc[:, 3:]
-        st.write(df)
-        1==1
-        1==1
+        with st.container():
+            df = pd.DataFrame(base.list_rows("Table1"))
+            df = df.iloc[:, 3:]
+            st.write(df)
