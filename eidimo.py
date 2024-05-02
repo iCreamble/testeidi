@@ -63,12 +63,13 @@ with tab3:
 
         tab3input2 = st.text_input('ID necessidade')
 
-        thisrow = base.get_row('Table1', tab3input2)
-        thisrow['Aprovado'] = 1
+        if tab3input2 != '':
+            thisrow = base.get_row('Table1', tab3input2)
+            thisrow['Aprovado'] = 1
 
-        thisrow = pd.DataFrame.from_records([thisrow])
-        thisrow = thisrow.iloc[:, 3:]
-        thisrow = thisrow.to_dict('records')[0]
+            thisrow = pd.DataFrame.from_records([thisrow])
+            thisrow = thisrow.iloc[:, 3:]
+            thisrow = thisrow.to_dict('records')[0]
 
         
         if st.button('Aprovar solicitação'):
