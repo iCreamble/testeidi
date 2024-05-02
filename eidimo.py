@@ -1,7 +1,7 @@
 import pandas as pd
 import streamlit as st
 import time
-from datetime import datetime
+from datetime import datetime, timedelta
 from seatable_api import Base, context
 
 
@@ -32,7 +32,7 @@ with tab1:
         if st.form_submit_button('Solicitar'):
 
             dict = {}
-            dict['Data'] = '{}'.format(datetime.strftime(datetime.now(), '%d/%m/%Y %H:%M'))
+            dict['Data'] = '{}'.format(datetime.strftime(datetime.now()-timedelta(hours=3), '%d/%m/%Y %H:%M'))
             dict['Codigo'] = input1
             dict['Quantidade'] = input2
             dict['Multiplo'] = input3
