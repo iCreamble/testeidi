@@ -77,7 +77,7 @@ with tab3:
         thisrow = thisrow.iloc[:, 3:]
 
         # st.write(thisrow)
-        thisrow = thisrow.to_dict('records')
+        thisrow = thisrow.to_dict('records')[0]
 
         st.write(thisrow)
         
