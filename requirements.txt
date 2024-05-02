@@ -1,3 +1,3 @@
-seatable-api==2.7.2
-pandas==1.4.2
-streamlit==1.27.2
+seatable-api
+pandas
+streamlit
