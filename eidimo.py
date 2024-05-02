@@ -70,7 +70,10 @@ with tab3:
         # st.write(thisrow)
         # st.write([thisrow])
 
-        thisrow = pd.DataFrame([thisrow])
+        thisrow = pd.DataFrame(thisrow)
+
+        st.write(thisrow)
+        
         thisrow = thisrow.iloc[:, 3:]
 
         # st.write(thisrow)
