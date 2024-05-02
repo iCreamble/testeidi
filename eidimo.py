@@ -32,7 +32,7 @@ with tab1:
         if st.form_submit_button('Solicitar'):
 
             dict = {}
-            dict['Data'] = '{}'.format(datetime.strftime(datetime.now(), '%d/%m/%Y'))
+            dict['Data'] = '{}'.format(datetime.strftime(datetime.now(), '%d/%m/%Y %H:%M'))
             dict['Codigo'] = input1
             dict['Quantidade'] = input2
             dict['Multiplo'] = input3
