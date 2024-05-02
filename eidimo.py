@@ -65,7 +65,7 @@ with tab3:
     tab3input2 = st.text_input('ID necessidade')
 
     thisrow = base.get_row('Table1', tab3input2)
-    thisrow['feito'] = 1
+    thisrow['Aprovado'] = 1
     
     if st.button('Aprovar solicitação'):
         base.update_row('Table1', tab3input2, thisrow)
