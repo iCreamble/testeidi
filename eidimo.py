@@ -68,7 +68,7 @@ with tab3:
             thisrow['Aprovado'] = 1
 
             thisrow = pd.DataFrame.from_records([thisrow])
-            thisrow = thisrow.iloc[:, 3:]
+            thisrow = thisrow.iloc[:, 6:]
             thisrow = thisrow.to_dict('records')[0]
 
         
